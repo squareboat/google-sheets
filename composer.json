@@ -1,0 +1,32 @@
+{
+    "name": "squareboat/google-sheets",
+    "description": "Intregate Google Sheets Package with ease.",
+    "type": "library",
+    "keywords": ["google sheets", "php"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Vinayak Sarawagi",
+            "email": "vinayak.sarawagi@squareboat.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|6.0.*",
+        "illuminate/config": "5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|6.0.*",
+        "google/apiclient": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Squareboat\\Sheets\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Squareboat\\Sheets\\SquareboatSheetsProvider"
+            ]
+        }
+    }
+}
